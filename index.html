@@ -1,0 +1,335 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GVA | Home</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"/>
+</head>
+
+<style media="screen">
+    .carousel-cell{
+        width: 24%;
+    }
+    @media(max-width: 700px){
+        .carousel-cell {
+            width: 100%;
+        }
+    }
+</style>
+
+<body>
+    <section class="header">
+        <nav>
+           <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="admission.html">ADMISSION</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <a style ='text-decoration:none; color: #ff0; font-size:22px; background:transparent' href='images/latest-download/admission-notice.pdf' target="_blank">
+            <marquee> Admission Process is Going On for HS 1st YEAR, 2021-22 FOR SCIENCE, Click here to know more.. </marquee></a>
+
+        <div class="text-box">
+            <h1>Gyan Vikash Academy</h1>
+            <p>Bringing Ambition To Life</p>
+            <a href="#" class="hero-btn">Visit Us To Know More</a>
+        </div>
+
+        <button onclick="topFunction()"
+            id="scroll-up-btn" title="go-to-top">
+                <i class="fa fa-angle-double-up"></i>
+        </button>
+
+    </section>
+
+    <!--------Course-------->
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>We provide separate classes for both English & Assamese medium</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>H.S Science</h3>
+                <p>
+                    Individual care will be taken for each student to help remove
+                    the deficiencies and improve performance. Regular internal evaluation
+                    and prctical examination will be held for regular evaluation and further improvement.
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>H.S Arts</h3>
+                <p>Opening Soon</p>
+            </div>
+        </div>
+    </section>
+
+    <!--------Facilities----->
+
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>We provide scholarship for toppers up-to 100%</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/library.png"
+                <h3>Well Equiped Laboratory & Library</h3>
+                <p></p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/digital-classroom.jpg"
+                <h3>Digital Class Room</h3>
+                <p></p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/NEET-JEE.jpg"
+                <h3>Guidence for NEET & JEE</h3>
+                <p></p>
+            </div>
+        </div>
+    </section>
+
+
+<!--------testimonials--------->
+
+    <section class="testimonials">
+        <h1>Message</h1>
+        <p>Bringing Ambition to Life</p>
+
+        <div class="row">
+            <div class="testimonials-col">
+                <img src="images/user1.jpg">
+                <div>
+                    <p>Updating soon.....<br><br><br></p>
+                <h3>Md. Rofiqul Islam</h3>
+                <h5>Principal, GVA</h5>
+                </div>
+            </div>
+            <div class="testimonials-col">
+                <img src="images/user2.jpg">
+                <div>
+                    <p>When we talk about Gyan Vikash Academy of late,
+                        we talk about an unrivalled educational institution
+                         imparting quality education for all stages of learners
+                          and that echoes in our ears. It has, in its course of journey,
+                          established an identity in the society as the real path-finder
+                           to the teachers, students, guardians and others.</p>
+                <h3>Management</h3>
+                <h5>Gyan Vikash Academy</h5>
+                <!-- <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--------- Our Faculties ------------>
+    <section class="faculties">
+        <h1>Our Faculties</h1>
+        <p>Well Qualified & Experienced Faculty</p>
+
+        <div class="carousel" data-flickity='{ "groupCells": true }'>
+            <div class="carousel-cell faculties-col">
+                <img src="images/faculty/Principal.png">
+                <div class="layer">
+                    <div class=f-des>
+                        <h4>Md. Rofiqul Islam</h4>
+                        <h6>M.A (English)</h6>
+                    </div>
+                    <span>English</span>
+                </div>
+            </div>
+            <div class="carousel-cell faculties-col">
+                <img src="images/faculty/Amina.png">
+                <div class="layer">
+                    <div class=f-des>
+                        <h4>Amina Jasmin</h4>
+                        <h6>M.A (Assamese)</h6>
+                        <p>2 Years Exp.</p>
+                    </div>
+                    <span>Assamese</span>
+                </div>
+            </div>
+            <div class="carousel-cell faculties-col">
+                <img src="images/faculty/Ripon.png">
+                <div class="layer">
+                    <div class=f-des>
+                        <h4>Monirul Islam</h4>
+                        <h6>B.Tech (Civil)</h6>
+                        <p>1 Year Exp.</p>
+                    </div>
+                    <span>Physics</span>
+                </div>
+            </div>
+            <div class="carousel-cell  faculties-col">
+                <img src="images/faculty/Latif.png">
+                <div class="layer">
+                    <div class=f-des>
+                        <h4>Abdul Latif Ahmed</h4>
+                        <h6>M.Sc (Chemistry)</h6>
+                        <p>GATE & IIT-JAM Qualified, Work in Chegg as Q&A Expert</p>
+                    </div>
+                    <span>Chemistry</span>
+                </div>
+            </div>
+            <div class="carousel-cell faculties-col">
+                <img src="images/faculty/Biki.png">
+                <div class="layer">
+                    <div class=f-des>
+                        <h4>Khurshid Ahmed</h4>
+                        <h6>B.E (Electrical)</h6>
+                        <p>GATE Qualified, 2 Years Exp.</p>
+                    </div>
+                    <span>Mathematics</span>
+                </div>
+            </div>
+            <div class="carousel-cell  faculties-col">
+                <img src="images/faculty/Kabir.png">
+                <div class="layer">
+                    <div class=f-des>
+                        <h4>Firdous UL Kabir</h4>
+                        <h6>M.Sc (Zoology), B.Ed</h6>
+                        <p>U.P TET Qulified, 1 Year Exp.</p>
+                    </div>
+                    <span>Zoology</span>
+                </div>
+            </div>
+            <div class="carousel-cell faculties-col">
+                <img src="images/faculty/Akhinur.png">
+                <div class="layer">
+                    <div class=f-des>
+                        <h4>Akhinur Sultan</h4>
+                        <h6>M.Sc (Physics), B.Ed</h6>
+                        <p>U.P & L.P TET Qualified, 2 Years Exp.</p>
+                    </div>
+                    <span>Physics</span>
+                </div>
+            </div>
+            <div class="carousel-cell  faculties-col">
+                <img src="images/faculty/Obaidur.png">
+                <div class="layer">
+                    <div class=f-des>
+                        <h4>Md. Obaidur Rohman</h4>
+                        <h6>M.Sc (Chemistry)</h6>
+                    </div>
+                    <span>Chemistry</span>
+                </div>
+            </div>
+            <div class="carousel-cell faculties-col">
+                <img src="images/faculty/Alom.png">
+                <div class="layer">
+                    <div class=f-des>
+                        <h4>Ashraful Alom</h4>
+                        <h6>M.Sc (Mathematics)</h6>
+                    </div>
+                    <span>Mathematics</span>
+                </div>
+            </div>
+            <div class="carousel-cell  faculties-col">
+                <img src="images/faculty/Mimi.png">
+                <div class="layer">
+                    <div class=f-des>
+                        <h4>Wasmina Parveen Mimi</h4>
+                        <h6>M.Sc (Botany)</h6>
+                    </div>
+                    <span>Botany</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!--------- Call To Action ------------>
+
+    <section class="cta">
+        <h1>Hurry Up!<br>Enroll Today</h1>
+        <a href="contact.html" class="hero-btn">CONTACT US</a>
+    </section>
+
+
+    <!--------- Footer ------------>
+    <footer class="footer-area">
+        <div class="footer-wave-box">
+            <div class="footer-wave footer-animation"></div>
+        </div>
+        <div class="main">
+            <div class="footer">
+                <div class="single-footer wow fadeInLeft">
+                    <h4>contact us</h4>
+                    <ul>
+                        <li><a href="contact.html#map-location"><i class="fas fa-map-marker-alt"></i>Hatsingimari, S.S.Mankachar, 783135, Assam, IN</a></li>
+                        <li><a href="tel:+917002081711"><i class="fas fa-mobile-alt"></i> +91 70020 81711</a></li>
+                        <li><a href="mailto:gyanvikashacademyhsm@gmail.com" class="email"><i class="fas fa-envelope"></i> info@gva.com</a></li>
+                        <li><a href="index.html" class="email"><i class="fas fa-globe-europe"></i> www.gyanvikashacademy.com</a></li>
+                    </ul>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/Gyan-Vikash-Academy-Hatsingimari-104250925239511" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/academy_vikash" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/gvahsm" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="single-footer wow fadeInLeft">
+                    <h4>latest downloads</h4>
+                    <ul>
+                        <li><a href="images/latest-download/admission-form.pdf" target="_blank"><i class="fas fa-chevron-right"></i> admission form</a></li>
+                        <li><a href="images/latest-download/prospectus.pdf" target="_blank"><i class="fas fa-chevron-right"></i> prospectus 2021-2022</a></li>
+                        <li><a href="images/latest-download/fee-structure.pdf" target="_blank"><i class="fas fa-chevron-right"></i> fee structure</a></li>
+                    </ul>
+                </div>
+                <div class="single-footer wow fadeInRight">
+                    <h4>quick links</h4>
+                    <ul>
+                        <li><a href="http://www.ahsec.nic.in/" target='blank'><i class="fas fa-chevron-right"></i> AHSEC</a></li>
+					    <li><a href="https://www.sebaonline.org//" target='blank'><i class="fas fa-chevron-right"></i> SEBA</a></li>
+					    <li><a href="https://www.gauhati.ac.in/" target='blank'><i class="fas fa-chevron-right"></i> Gauhati University</a></li>
+                    </ul>
+                </div>
+                <div class="single-footer wow fadeInRight">
+                    <h4>developer Info</h4>
+                    <div id="profile-image"><span>A M S</span></div>
+                    <ul>
+                        <li><a href="https://abdulmominsk.github.io/home/" target="_blank"><i class="fas fa-user"></i> Abdul Momin Sk</a></li>
+                        <li><a href="tel:+918134847626"><i class="fas fa-mobile-alt"></i> +91 81348 47626</a></li>
+                        <li><a href="mailto:abdulmomin701@gmail.com" class="email"><i class="far fa-envelope"></i> abdulmomin701@gmail.com</a></li>
+                        <li><a href="https://abdulmominsk.github.io/home/" target="_blank"><i class="fas fa-globe-europe"></i> Visit Profile</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copy animated fadeIn">
+                <p>&copy; GVA, 2021 all rights reserved | Design & Develop <a href="https://abdulmominsk.github.io/home/" target="_blank"><i class="fa fa-heart"></i> Abdul Momin Sk</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+</body>
+
+
+</html>
